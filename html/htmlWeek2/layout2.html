@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        1) body의 색깔 지정 
+        2) 공통적인 설정 (글자 색깔,글자 크기,중앙 정렬)
+        3) #wrap 설정(너비, 높이(선택),margin : 0 auto,)
+        4) #aside,content 설정 - 너비,높이,배경색
+        5) aside,head,main,footer 설정 - 너비(선택),높이,배경
+        */
+        body{background-color: aqua;}
+        *{color: white;font-size: 40px; text-align: center;}
+        #wrap{width: 1000px; height: auto; margin: 0 auto; }
+        #aside{width: 280px; height: 1000px;background: rgb(109, 234, 234); }
+        #content{width: 700px; height: 1000px; background: rgb(109, 205, 205);}
+        #aside,#content{display: inline-block; vertical-align: top;}
+        /* #aside display방식 inline-block일 떄 box가 글자 취급 */
+        header,main,footer{width: 700px; height: 330px;}
+        header{background-color: coral;}
+        main{background-color: rgb(134, 64, 39);}
+        footer{background-color: rgb(255, 184, 159);}
+    </style>
+</head>
+<body>
+    <div id = "wrap">
+        <div id = "aside">
+            <aside>aside</aside>
+        </div>
+        
+        <div id ="content">
+            <header>header</header>
+            <main>content</main>
+            <footer>footer</footer>
+        </div>
+    </div>
+</body>
+</html>
